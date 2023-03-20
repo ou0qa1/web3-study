@@ -65,3 +65,10 @@ main()
     process.exit(1);
 });
 ```
+
+result
+```
+┌──(root㉿xxx)-[~/sc/test]
+└─# npx hardhat run test/myTest/test.js --network localhost
+Success! ETH has been sent to the attacker's account.                                                            
+```
