@@ -72,3 +72,11 @@ result
 └─# npx hardhat run test/myTest/test.js --network localhost
 Success! ETH has been sent to the attacker's account.                                                            
 ```
+
+If the smart contract did't mark external/internal/etc.. , the default value should be external
+Example: (It should be external)
+```
+function _sendETH()  {
+     msg.sender.transfer(address(this).balance);
+}
+```
